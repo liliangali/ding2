@@ -135,7 +135,7 @@ class AuthController extends BaseController {
             $img = collect($article['img'])->random(5)->all();
         }
         $c_arr = array_merge($art,$img);
-//echo '<pre>';print_r(count($c_arr));exit;
+echo '<pre>';print_r(count($c_arr));exit;
         $articlel = "";
         foreach ((array)$c_arr as $i => $item)
         {
