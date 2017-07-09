@@ -1,0 +1,4 @@
+ALTER TABLE `user` CHANGE `Password` `password` VARCHAR(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '' COMMENT '登录密码';
+ALTER TABLE `user` CHANGE `token` `token` VARCHAR(255) NULL DEFAULT NULL COMMENT '令牌';
+ALTER TABLE `classes` CHANGE `CreatTime` `CreatTime` VARCHAR(6255) NOT NULL COMMENT '创建班级时间';
+ALTER TABLE `course` ADD `SchoolID` INT NOT NULL COMMENT '学校ID' AFTER `CourseName`;
